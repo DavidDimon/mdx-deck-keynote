@@ -1,0 +1,82 @@
+import { CodeSurfer } from 'code-surfer'
+import { Steps } from 'mdx-deck'
+import { theme as CustomTheme } from './theme'
+
+import { Image } from './components'
+import ImageExample from './assets/printExample.png'
+
+export const theme = CustomTheme
+
+## mdx-deck
+
+Como criar apresentações de um jeito mais front-end
+
+---
+
+## O que é mdx?
+
+---
+
+## O que é mdx deck?
+
+---
+
+## Quais as vantagens de usar o mdx-deck?
+
+<ul>
+  <li>Hospedagem das apresentações</li>
+  <Steps>
+    <li>Útilizar componentes feitos em react nas apresentações</li>
+    <li>Customização gigantesca</li>
+    <li>Code surfer</li>
+  </Steps>
+</ul>
+
+
+---
+
+## Quais as desvantagens de usar o mdx-deck?
+
+<ul>
+  <li>Build do gatsby</li>
+  <Steps>
+    <li>Pode ser uma solução um pouco radical</li>
+  </Steps>
+</ul>
+
+
+---
+
+## O que é o code surfer
+
+---
+
+<CodeSurfer>
+
+
+```js title="Exemplo do code surfer" subtitle="Bad code"
+if(test === true){
+  return 'its truly'
+}else{
+  return 'its falsy'
+}
+```
+
+```js subtitle="Good code"
+if(test) return 'its truly'
+
+return 'its falsy'
+```
+
+</CodeSurfer>
+
+
+---
+
+## Bora pro código?
+
+<Image
+  src={ImageExample}
+  width={[300, 300, 300, 400]}
+  height={[300, 300, 300, 400]}
+/>
